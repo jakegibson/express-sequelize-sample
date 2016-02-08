@@ -24,7 +24,8 @@
     "express": "^4.13.4",
     "mysql": "^2.10.2",
     "path": "^0.12.7",
-    "sequelize": "^3.19.2"
+    "sequelize": "^3.19.2",
+    "sequelize-auto": "^0.2.13"
   },
   "devDependencies": {
     "babel-register": "^6.4.3",

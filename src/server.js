@@ -6,7 +6,7 @@ import cors from 'cors';
 const app = express();
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -30,6 +30,8 @@ fs.readdirSync(`${__dirname}/api`).forEach( file => {
 	routes[fileName] = require(`./api/${file}`);
 	app.use(`/${fileName}`, routes[fileName]);
 });
+
+app.use(express.static('public'));
 
 app.listen(port);
 

@@ -23,8 +23,8 @@ Object.keys(db).forEach(function(modelName) {
 });
 
 ///// DEV ONLY!!!!///
-if(env === 'development')
-  sequelize.sync({force: true})
+// if(env === 'development')
+//   sequelize.sync({force: true})
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
